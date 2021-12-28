@@ -4,7 +4,7 @@ import { addNewItem } from '../store/items/actions';
 import { bindActionCreators } from 'redux';
 
 // if u do mapDispatchToProps with an object without argument, it will automatically map dispatch to props for u.
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
       onSubmit: (name, price) => addNewItem(name, price)
